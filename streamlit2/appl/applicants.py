@@ -28,6 +28,7 @@ def tell_time():
 
 # To create session to connect to mysql using connection params.
 def mysql_connection():
+# Ensure you input the password to your mysql database in the 'details.toml' to avoid complications!!!
         old_path = Path.cwd()
         path = old_path.parent
         new_path  = (path/'secrets'/'details.toml')
